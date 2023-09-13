@@ -140,28 +140,27 @@
             <div class="row mt-4">
                 <div class="col-lg-6">
                     <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
-                        <div id="display-google-map" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Los+Angeles,+CA,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="code-for-google-map" href="https://kbj9qpmy.com/hrn" id="authorize-maps-data">Hosting Right Now</a>
-                        <style>#display-google-map img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
-                        </div>
+                    <div style="overflow:hidden;max-width:100%;width:600px;height:600px;"><div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Los+Angeles&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                    <a class="embed-map-html" href="https://kbj9qpmy.com/bp" id="grab-map-authorization">Broadband Providers</a>
+                    <style>#gmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                    </style>
+                    </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <!-- form fields -->
                     <form data-netlify = "true">
                         <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="email" class="form-control mt-3" placeholder="Your Email">
                         <input type="text" class="form-control mt-3" placeholder="Subject">
                         <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Details"></textarea>
+                            <textarea class="form-control" rows="8" id="comment" name="text" placeholder="Details"></textarea>
                         </div>
                     </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    <button type="button" class="btn btn-success mt-3">Send!</button>
                     
                 </div>
 
