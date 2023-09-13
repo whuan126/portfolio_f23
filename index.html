@@ -161,7 +161,6 @@
 
             <div class="row mt-4">
                 <div class="col-lg-6">
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
                     <div style="overflow:hidden;max-width:100%;width:600px;height:600px;"><div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;">
                         <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Los+Angeles&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
                         </iframe>
@@ -175,11 +174,11 @@
                 <div class="col-lg-4">
                     <!-- form fields -->
                     <form method = "POST" data-netlify = "true">
-                        <input type="text" class="form-control form-control-lg" placeholder="Your Name">
-                        <input type="email" class="form-control mt-3" placeholder="Your Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <input type="name" class="form-control mt-3" name = "name" placeholder="Your Name">
+                        <input type="email" class="form-control mt-3" name = "email" placeholder="Your Email">
+                        <input type="text" class="form-control mt-3" name = "subject" placeholder="Subject">
                         <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="8" id="comment" name="text" placeholder="Message"></textarea>
+                            <textarea class="form-control" rows="8" name = "message" id="message" name="text" placeholder="Message"></textarea>
                         </div>
                     </form>
                     <button type="submit" class="btn btn-success mt-3">Send message!</button>
